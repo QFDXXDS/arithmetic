@@ -6,6 +6,9 @@
 //  Copyright © 2019 XXDS. All rights reserved.
 //
 
+
+//https://github.com/scotteg/SwiftSingleton/blob/master/Singleton/ViewController.swift
+
 import UIKit
 
 @UIApplicationMain

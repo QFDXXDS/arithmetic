@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XOc-MC-fxj">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="arithmetic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-47-XHm">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bF-BC-sq4"/>
@@ -35,6 +36,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="446" y="-36"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="77j-sr-vaJ">
+            <objects>
+                <viewController id="XOc-MC-fxj" customClass="ViewController1" customModule="arithmetic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4M-QJ-aZe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTb-1n-hfG">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="TaC-b2-wQ6"/>
+                                    <constraint firstAttribute="height" constant="300" id="re8-1I-KuO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dMz-hz-kNs" appends="YES" id="vry-jQ-N6Q"/>
+                                    <outletCollection property="gestureRecognizers" destination="1zr-Ik-BTM" appends="YES" id="3Dq-nO-kDJ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sTb-1n-hfG" firstAttribute="centerX" secondItem="g4M-QJ-aZe" secondAttribute="centerX" id="35d-F9-5fV"/>
+                            <constraint firstItem="sTb-1n-hfG" firstAttribute="centerY" secondItem="g4M-QJ-aZe" secondAttribute="centerY" id="rbE-eN-n3d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dil-ei-x2o"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewForLayer" destination="sTb-1n-hfG" id="WaX-Wq-uaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sY7-xH-V5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dMz-hz-kNs">
+                    <connections>
+                        <action selector="tapGestureRecognizedWithSender:" destination="XOc-MC-fxj" id="PmC-kh-rDf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="1zr-Ik-BTM">
+                    <connections>
+                        <action selector="pinchGestureRecognizedWithSender:" destination="XOc-MC-fxj" id="NgV-3B-YXr"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1104" y="-36"/>
         </scene>
     </scenes>
 </document>
