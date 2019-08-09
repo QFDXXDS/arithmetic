@@ -321,7 +321,7 @@ class ViewController: UIViewController {
         
         UIApplication.shared.openURL(URL.init(string: "vidyomobile://")!)
         
-        
+        print("11111")
     }
     
     
